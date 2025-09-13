@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <title>Kalkulator</title>
+    <style>
+      #display span {
+        display: inline-block;
+        word-break: break-word;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-300">
+    <div
+      class="container  h-screen flex flex-col justify-between p-6 mx-auto max-w-sm bg-neutral-800 md:rounded-2xl shadow-lg min-h-[720px]"
+    >
+      <!-- Display -->
+      <div
+        id="display"
+        class="w-full h-60 rounded-md bg-neutral-800 px-5 text-white overflow-y-hidden
+               text-5xl md:text-7xl font-light leading-tight 
+               overflow-y-aut break-words 
+               flex items-end justify-end text-right"
+      >
+        <span>0</span>
+      </div>
+
+      <!-- Tombol -->
+      <div id="buttons" class="grid mt-10 grid-cols-4 gap-3">
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-xl text-white bg-gray-400 hover:bg-gray-300">C</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-xl text-white bg-gray-400 hover:bg-gray-300">±</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-xl text-white bg-gray-400 hover:bg-gray-300">%</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-orange-500 hover:bg-orange-400">÷</button>
+
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-zinc-700 hover:bg-zinc-600">7</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-zinc-700 hover:bg-zinc-600">8</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-zinc-700 hover:bg-zinc-600">9</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-orange-500 hover:bg-orange-400">×</button>
+
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-zinc-700 hover:bg-zinc-600">4</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-zinc-700 hover:bg-zinc-600">5</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-zinc-700 hover:bg-zinc-600">6</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-orange-500 hover:bg-orange-400">−</button>
+
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-zinc-700 hover:bg-zinc-600">1</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-zinc-700 hover:bg-zinc-600">2</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-zinc-700 hover:bg-zinc-600">3</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-orange-500 hover:bg-orange-400">+</button>
+
+        <button class="col-span-2 w-full rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-zinc-700 hover:bg-zinc-600">0</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-zinc-700 hover:bg-zinc-600">.</button>
+        <button class="w-full aspect-square rounded-2xl flex items-center justify-center font-bold text-2xl text-white bg-orange-500 hover:bg-orange-400">=</button>
+      </div>
+    </div>
+<script src="script.js">
+</script>
+
+
+  </body>
+</html>
